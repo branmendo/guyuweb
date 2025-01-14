@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <title>GUYU</title>
     <link rel="stylesheet" href="../Styles/style.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,28 +14,49 @@
             header.style.opacity = 1 - scrollTop / 500;
         })
      </script>
+  
     <div class="topbar" id="topbar">
        
         <div class="logo">
         <img src="../LOGO (1024x1024) 3.png" width="75px" height="75px" alt="logo">
         </div>
         <div class="login">
-        <img src="../md-person.svg" width="75px" height="75px" alt="login">
+        <img src="../md-person.svg" width="30px" height="30px" alt="login">
         </div>  
     </div>
    
-    <div class="search">
+     <div> <h1 class="title">Start your adventure!</h1></div>
+
+    <div class="search input-group ">
+      <!-- <span class="input-group-text " style="border-top-left-radius: 35px; border-bottom-left-radius:35px; height:50px;">Vehicle</span> -->
+
+      <div class="col-xs-2" style="margin-left:auto;">
+        <input class="form-control" type="text" placeholder="Write your vehicle"
+       style="border-left:0; border-right:0;height:50px;  opacity: 0.7; border-top-left-radius:35px; border-bottom-left-radius:45px; border-top:0;border-bottom:0; border-right:0; "/>
+      </div>
       
-      <input style="height:48px; grid-column-start: 1;
-      width:50%; border-radius: 35px; border-bottom-right-radius: 0; border-top-right-radius: 0; opacity:0.7;margin-left:54%;
-        font-size:15px; border-top:0;border-bottom:0;border-left:0;
-      font-weight: bold;" >
-      <input type="date" style="height:50px; grid-column-start:2;  width:50%;opacity:0.7; margin-left:7.2%; border-top:0; border-bottom:0">
-      <input type="date" style="height:50px; width:50%; opacity:0.7; border-top-right-radius: 35px; grid-column-start: 3; 
-      border-bottom-right-radius: 45px; margin-left:-42%; border-top:0; border-bottom:0; border-right:0"
+       <!-- <span class="input-group-text" style="height:50px; border-left:0; border-right:0;">From (Date)</span> -->
+       <div class="col-xs-2">
+        <input class="form-control" type="date" style="height:50px; opacity:0.7;  border-top:0; border-bottom:0;outline:none; border-left:0; border-right:0;">
+       </div>
+       <div class="col-xs-2" style="margin-right:auto;">
+        <input type="date" style="height:50px;  opacity:0.7; border-top-right-radius: 35px; outline:none;
+      border-bottom-right-radius: 45px; ; border-top:0; border-bottom:0; border-right:0; border-left:0;"
       >
-      <i class="fa fa-search" style="grid-column-start:3; margin-top:-8%; margin-left:15%"></i>
-      <h1 class="title">Start your adventure!</h1>
+      <button class="searchbutt"><i class="fa fa-search"></i></button>
+       </div>
+      <!-- <span class="input-group-text" style="height:50px; ">To (Date)</span> -->
+       
+      <div>
+        
+      </div>
+      <div>
+        <div></div>
+       
+        <div></div>
+       
+      </div>
+      <div></div>
     </div>
     <div>
         <h2 class="subtitle">Skip the line!</h2>
@@ -43,9 +65,9 @@
         <h3 class="subtitle">Pick from our most popular cities!</h3>
     </div>
     <div class="cities">
-       <div style="width:300px">
+       <!-- <div style="width:500px">
 
-       </div>
+       </div> -->
        
         <div class="cards" >
             <img src="../Santo Domingo.jpg" alt="Santo Domingo" style="height:160px; width:160px; ">
@@ -64,18 +86,20 @@
         </div>
     </div>
     <div>
-    <div style="background:radial-gradient(#98b5f5,#ffff)">
+    <div >
         <h2 class="subtitle">Get the weekend escapade that you've always wanted!</h2>
-        <img src="../couple.jpg" style="width:720px; height:300px; border-radius:35px; display:block; margin-left:auto; margin-right:auto;">
     </div>
-    <div class="copyright" style="background:radial-gradient(#98b5f5,#ffff)">
-        <div class="col-lg-4" style="background:radial-gradient(#98b5f5,#ffff)">
+    <div class="car">
+        <img width="270px" height="270px" style="transform:rotate(180deg); transform: scaleX(-1);" src="/vecteezy_off-road-car-dirt-car-jeep-suv-off-road-vehicle-4x4-four_27232292.png">
+    </div>
+    <div class="copyright" >
+        <div class="col-lg-4" >
             <p class="subtitle">Copyright 2024</p>
         </div>
-        <div class="col-lg-4" style="background:radial-gradient(#98b5f5,#ffff)">
+        <div class="col-lg-4" >
             <p class="subtitle">branmendo testing front end techniques</p>
         </div>
-        <div class="col-lg-4" style="background:radial-gradient(#98b5f5,#ffff)">
+        <div class="col-lg-4" >
             <p class="subtitle">Lorem ipsum dolor amet</p>
         </div>
     </div>
